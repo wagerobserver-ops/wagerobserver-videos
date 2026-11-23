@@ -1,0 +1,24 @@
+# wagerobserver-videos: how to work in this repo
+
+Short educational explainer videos for WagerObserver's YouTube channel (@WagerObserver), the site's guides and the social cuts. Public repo on purpose: GitHub Actions minutes are free for public repos, so renders don't spend the site repo's minutes. Never commit a secret; keys live in the repository's Actions secrets.
+
+The plan, the rules and the calendar are in the Project doc `claude/video-plano.md`; finished scripts are in `claude/video-guioes.md`. The conversation that owns this repo is "video" (label `para:video` on the site repo, wagerobserver-ops/wagerobserver).
+
+## What a video may and may not show
+
+- Educational only: how a bet works, what terms mean, how to check a licence. Each video answers one question and points to the site page that goes deeper.
+- Never: operators' names, logos, offers, bonuses, odds or promo codes, `/go/` links, people, athletes, badges, cartoons, money flying, urgency, "risk-free", "guaranteed" or any word on the site's *Never* list.
+- Every video: the card "18+ · Educational, not betting advice" first; the age always in a corner; the age and the helpline at the end and in the description (UK: National Gambling Helpline 0808 8020 133 and GAMSTOP; US: 21+, 1-800-MY-RESET and 1-800-GAMBLER in NJ, PA and MI); the affiliate disclosure and "Narration: synthetic voice" in the description.
+- Every figure matches the site page it explains (same sums, same rules). Every script and description passes the `wo-compliance-check` skill before it is rendered; the verdict goes in `scripts/compliance.md`.
+
+## How a video is made
+
+1. **Script:** `scripts/<slug>.md` (scenes: what is on screen and what is said, the description, the figures checked against the page).
+2. **Data:** `data/<slug>.ts`: for each scene `say` (what the voice reads, numbers in words: "ten to one", "oh eight oh eight…"), `caption` (the subtitle, numbers as figures) and `visual` (one of the kinds in `src/types.ts`). Register it in `src/videos.ts`.
+3. **Voice:** `python3 tools/tts.py <slug>` with Kokoro (kokoro-onnx, model v1.0, voice `bf_emma`, chosen by Tiago on 23 Nov 2026), about 150 words a minute. It writes `public/audio/<slug>/full.wav` (not committed) and `data/<slug>.timings.json` (committed: start and end of every scene and every sentence).
+4. **Render:** `npx remotion render src/index.ts <slug>-wide out/<slug>-wide.mp4` (16:9) and `<slug>-tall` (9:16, for Shorts, X, LinkedIn and Bluesky). The workflow `render.yml` does steps 3 and 4 on GitHub and keeps the MP4s as an artifact.
+5. **Upload:** YouTube Data API (not built yet): age-restricted, not made for kids, category Education, en-GB, comments off.
+
+## Look
+
+The site's colours, fonts (Fraunces, IBM Plex Sans) and collage art (`public/art/`, copied from the site's `public/art/`, rules in the site's `art/STYLE.md`). Cream paper, slips, figures and the yellow highlighter on the detail that matters. Losses in the site's danger red.
