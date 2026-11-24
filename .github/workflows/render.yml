@@ -14,8 +14,9 @@ on:
     paths: ['data/*.json', 'src/**', 'tools/**', 'public/art/**', 'package-lock.json']
 
 concurrency:
-  group: render-${{ github.ref }}
-  cancel-in-progress: true
+  # A push replaces an older push run; a run started by hand is never cancelled.
+  group: render-${{ github.event_name }}-${{ github.event_name == 'push' && github.ref || github.run_id }}
+  cancel-in-progress: ${{ github.event_name == 'push' }}
 
 jobs:
   render:
