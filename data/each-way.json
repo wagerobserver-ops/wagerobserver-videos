@@ -6,7 +6,12 @@
     {
       "say": "An each-way bet is two bets in one. Here's what each half pays, and when a place still loses you money.",
       "caption": "An each-way bet is two bets in one. Here's what each half pays, and when a place still loses you money.",
-      "visual": { "kind": "title", "kicker": "Each-way bets explained", "title": "What a place pays, and when it still loses", "art": "art/uk-each-way-1200.webp" }
+      "visual": {
+        "kind": "title",
+        "kicker": "Each-way bets explained",
+        "title": "What a place pays, and when it still loses",
+        "art": "art/uk-each-way-1200.webp"
+      }
     },
     {
       "say": "Five pounds each way costs ten pounds: five on your horse to win, and five on it to finish in the places.",
@@ -15,8 +20,22 @@
         "kind": "slips",
         "heading": "£5 each way = £10",
         "slips": [
-          { "label": "WIN", "lines": ["£5", "on your horse to win"], "at": 0.3 },
-          { "label": "PLACE", "lines": ["£5", "to finish in the places"], "at": 0.65 }
+          {
+            "label": "WIN",
+            "lines": [
+              "£5",
+              "on your horse to win"
+            ],
+            "at": 0.3
+          },
+          {
+            "label": "PLACE",
+            "lines": [
+              "£5",
+              "to finish in the places"
+            ],
+            "at": 0.65
+          }
         ]
       }
     },
@@ -27,25 +46,77 @@
         "kind": "slips",
         "heading": "10/1 · ⅕ the odds · 3 places",
         "slips": [
-          { "label": "WINS", "lines": ["£55 + £15", "win part + place part"], "result": "£70 back", "tone": "ok", "at": 2 },
-          { "label": "2ND OR 3RD", "lines": ["£15", "place part only"], "result": "£15 back", "tone": "plain", "at": 3 },
-          { "label": "UNPLACED", "lines": ["£0", "both parts lose"], "result": "£0 back", "tone": "loss", "at": 4 }
+          {
+            "label": "WINS",
+            "lines": [
+              "£55 + £15",
+              "win part + place part"
+            ],
+            "result": "£70 back",
+            "tone": "ok",
+            "at": 2
+          },
+          {
+            "label": "2ND OR 3RD",
+            "lines": [
+              "£15",
+              "place part only"
+            ],
+            "result": "£15 back",
+            "tone": "plain",
+            "at": 3
+          },
+          {
+            "label": "UNPLACED",
+            "lines": [
+              "£0",
+              "both parts lose"
+            ],
+            "result": "£0 back",
+            "tone": "loss",
+            "at": 4
+          }
         ],
         "footer": "Place part: 10/1 × ⅕ = 2/1",
         "footerAt": 1
       }
     },
     {
-      "say": "The places depend on the race. With five to seven runners, it's usually a quarter of the odds for the first two. Eight or more, a fifth for the first three. Big handicaps pay three or four places. Your bet slip shows the terms that count.",
-      "caption": "The places depend on the race. With 5 to 7 runners, it's usually a quarter of the odds for the first two. 8 or more, a fifth for the first three. Big handicaps pay 3 or 4 places. Your bet slip shows the terms that count.",
+      "say": "The places depend on the race. With five to seven runners, it's usually a quarter of the odds for the first two. Eight or more, a fifth for the first three. Big handicaps pay three or four places.",
+      "caption": "The places depend on the race. With 5 to 7 runners, it's usually a quarter of the odds for the first two. 8 or more, a fifth for the first three. Big handicaps pay 3 or 4 places.",
       "visual": {
         "kind": "table",
         "heading": "Usual UK place terms",
-        "head": ["Runners", "Odds", "Places"],
+        "head": [
+          "Runners",
+          "Odds",
+          "Places"
+        ],
         "rows": [
-          { "cells": ["5 to 7", "¼", "2"], "at": 1 },
-          { "cells": ["8 or more", "⅕", "3"], "at": 2 },
-          { "cells": ["Big handicaps", "¼ or ⅕", "3 or 4"], "at": 3 }
+          {
+            "cells": [
+              "5 to 7",
+              "¼",
+              "2"
+            ],
+            "at": 1
+          },
+          {
+            "cells": [
+              "8 or more",
+              "⅕",
+              "3"
+            ],
+            "at": 2
+          },
+          {
+            "cells": [
+              "Big handicaps",
+              "¼ or ⅕",
+              "3 or 4"
+            ],
+            "at": 3
+          }
         ],
         "note": "Your bet slip shows the terms that count"
       }
@@ -57,11 +128,30 @@
         "kind": "lines",
         "heading": "The catch at short prices",
         "lines": [
-          { "text": "3/1 × ⅕ = 3/5", "at": 2 },
-          { "text": "Place part: £5 → £8 back", "at": 2.45 },
-          { "text": "Win part: £5 lost", "at": 2.6, "small": true },
-          { "text": "£8 back from £10", "tone": "loss", "mark": true, "at": 2.75 },
-          { "text": "Profit on a place only above 5/1 (⅕ terms) or 4/1 (¼ terms)", "small": true, "at": 3 }
+          {
+            "text": "3/1 × ⅕ = 3/5",
+            "at": 2
+          },
+          {
+            "text": "Place part: £5 → £8 back",
+            "at": 2.45
+          },
+          {
+            "text": "Win part: £5 lost",
+            "at": 2.6,
+            "small": true
+          },
+          {
+            "text": "£8 back from £10",
+            "tone": "loss",
+            "mark": true,
+            "at": 2.75
+          },
+          {
+            "text": "Profit on a place only above 5/1 (⅕ terms) or 4/1 (¼ terms)",
+            "small": true,
+            "at": 3
+          }
         ]
       }
     },
@@ -72,15 +162,27 @@
         "kind": "lines",
         "heading": "Non-runners",
         "lines": [
-          { "text": "8 runners → 3 places", "strike": true, "at": 0.45 },
-          { "text": "7 start → 2 places", "mark": true, "at": 0.7 }
+          {
+            "text": "8 runners → 3 places",
+            "strike": true,
+            "at": 0.45
+          },
+          {
+            "text": "7 start → 2 places",
+            "mark": true,
+            "at": 0.7
+          }
         ]
       }
     },
     {
       "say": "Work out any each-way bet with our free calculator at Wager Observer. Gambling is for over-eighteens. If it stops being fun, the National Gambling Helpline is free on oh eight oh eight, eight oh two oh, one three three.",
       "caption": "Work out any each-way bet with our free calculator at WagerObserver. Gambling is for over-18s. If it stops being fun, the National Gambling Helpline is free on 0808 8020 133.",
-      "visual": { "kind": "end", "url": "wagerobserver.com", "tool": "Each-way calculator" }
+      "visual": {
+        "kind": "end",
+        "url": "wagerobserver.com",
+        "tool": "Each-way calculator"
+      }
     }
   ]
 }

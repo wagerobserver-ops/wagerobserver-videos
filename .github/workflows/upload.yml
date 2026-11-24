@@ -1,0 +1,50 @@
+# Renders one video and uploads it to the YouTube channel as private, scheduled to go public at
+# `publish` (ISO time, UTC). Runs only by hand (Actions → Upload → Run workflow).
+# Needs the secrets YT_CLIENT_ID, YT_CLIENT_SECRET and YT_REFRESH_TOKEN (see tools/upload.mjs).
+name: Upload
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: 'Video slug (data/<slug>.json)'
+        required: true
+      publish:
+        description: 'When it goes public, ISO UTC (e.g. 2026-12-01T12:00:00Z); empty = stays private'
+        required: false
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/cache@v4
+        with:
+          path: models
+          key: kokoro-v1.0
+      - run: pip install -r requirements.txt
+      - run: npm ci
+      - run: npx remotion browser ensure
+      - run: python3 tools/tts.py "${{ inputs.slug }}"
+      - name: Render
+        run: |
+          mkdir -p out
+          npx remotion render src/index.ts "${{ inputs.slug }}-wide" "out/${{ inputs.slug }}-wide.mp4" --crf=20 --log=error
+          npx remotion still src/index.ts "${{ inputs.slug }}-wide" "out/${{ inputs.slug }}-thumb.png" --frame=150 --log=error
+      - name: Upload
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: |
+          if [ -n "${{ inputs.publish }}" ]; then node tools/upload.mjs "${{ inputs.slug }}" --publish "${{ inputs.publish }}"
+          else node tools/upload.mjs "${{ inputs.slug }}"; fi

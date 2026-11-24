@@ -6,19 +6,39 @@
     {
       "say": "Five to one. Four to six. Evens. Here's how to read any fractional price, and what it pays.",
       "caption": "5/1. 4/6. Evens. Here's how to read any fractional price, and what it pays.",
-      "visual": { "kind": "title", "kicker": "Fractional odds explained", "title": "What 5/1, evens and 4/6 pay", "art": "art/uk-fractional-odds-1200.webp" }
+      "visual": {
+        "kind": "title",
+        "kicker": "Fractional odds explained",
+        "title": "What 5/1, evens and 4/6 pay",
+        "art": "art/uk-fractional-odds-1200.webp"
+      }
     },
     {
-      "say": "The first number is what you win, the second is what you stake. At five to one, you win five pounds for every pound you bet, and your stake comes back too. So ten pounds at five to one returns sixty pounds.",
-      "caption": "The first number is what you win, the second is what you stake. At 5/1, you win £5 for every £1 you bet, and your stake comes back too. So £10 at 5/1 returns £60.",
+      "say": "The first number is what you win, the second is what you stake. At five to one, you win five pounds for every pound you bet, and your stake comes back too. Ten pounds at five to one returns sixty pounds.",
+      "caption": "The first number is what you win, the second is what you stake. At 5/1, you win £5 for every £1 you bet, and your stake comes back too. £10 at 5/1 returns £60.",
       "visual": {
         "kind": "lines",
         "heading": "5/1",
         "lines": [
-          { "text": "5 = what you win · 1 = what you stake", "small": true, "at": 0.2 },
-          { "text": "£1 bet → £5 profit + £1 back", "at": 1 },
-          { "text": "£10 bet → £50 + £10", "at": 2 },
-          { "text": "£60 back", "mark": true, "tone": "ok", "at": 2.6 }
+          {
+            "text": "5 = what you win · 1 = what you stake",
+            "small": true,
+            "at": 0.2
+          },
+          {
+            "text": "£1 bet → £5 profit + £1 back",
+            "at": 1
+          },
+          {
+            "text": "£10 bet → £50 + £10",
+            "at": 2
+          },
+          {
+            "text": "£60 back",
+            "mark": true,
+            "tone": "ok",
+            "at": 2.6
+          }
         ]
       }
     },
@@ -29,9 +49,36 @@
         "kind": "slips",
         "heading": "Odds-on and evens, £10 stake",
         "slips": [
-          { "label": "ODDS-ON", "lines": ["1/2", "win £1 for every £2"], "result": "£15 back", "tone": "plain", "at": 1 },
-          { "label": "ODDS-ON", "lines": ["4/6", "win £4 for every £6"], "result": "£16.67 back", "tone": "plain", "at": 2 },
-          { "label": "EVENS", "lines": ["1/1", "win £1 for every £1"], "result": "£20 back", "tone": "plain", "at": 3 }
+          {
+            "label": "ODDS-ON",
+            "lines": [
+              "1/2",
+              "win £1 for every £2"
+            ],
+            "result": "£15 back",
+            "tone": "plain",
+            "at": 1
+          },
+          {
+            "label": "ODDS-ON",
+            "lines": [
+              "4/6",
+              "win £4 for every £6"
+            ],
+            "result": "£16.67 back",
+            "tone": "plain",
+            "at": 2
+          },
+          {
+            "label": "EVENS",
+            "lines": [
+              "1/1",
+              "win £1 for every £1"
+            ],
+            "result": "£20 back",
+            "tone": "plain",
+            "at": 3
+          }
         ]
       }
     },
@@ -42,24 +89,51 @@
         "kind": "lines",
         "heading": "Fraction → decimal: divide, add 1",
         "lines": [
-          { "text": "5/1 → 5 ÷ 1 + 1 = 6.00", "at": 1 },
-          { "text": "6/4 → 6 ÷ 4 + 1 = 2.50", "at": 2 },
-          { "text": "£10 × 6.00 = £60", "mark": true, "at": 3.3 }
+          {
+            "text": "5/1 → 5 ÷ 1 + 1 = 6.00",
+            "at": 1
+          },
+          {
+            "text": "6/4 → 6 ÷ 4 + 1 = 2.50",
+            "at": 2
+          },
+          {
+            "text": "£10 × 6.00 = £60",
+            "mark": true,
+            "at": 3.3
+          }
         ]
       }
     },
     {
-      "say": "The price also shows how likely the bookmaker thinks it is. Divide the second number by the two added together. Three to one is a twenty-five per cent chance. Four to six is sixty per cent. Add up every outcome in a market and you'll pass a hundred per cent. The extra is the bookmaker's margin, and it's how the bookmaker makes money whoever wins.",
-      "caption": "The price also shows how likely the bookmaker thinks it is. Divide the second number by the two added together. 3/1 is a 25% chance. 4/6 is 60%. Add up every outcome in a market and you'll pass 100%. The extra is the bookmaker's margin, and it's how the bookmaker makes money whoever wins.",
+      "say": "The price also shows how likely the bookmaker thinks it is. Divide the second number by the two added together. Three to one is a twenty-five per cent chance. Four to six is sixty per cent. Add up every outcome in a market and you'll pass a hundred per cent. The extra is the bookmaker's margin.",
+      "caption": "The price also shows how likely the bookmaker thinks it is. Divide the second number by the two added together. 3/1 is a 25% chance. 4/6 is 60%. Add up every outcome in a market and you'll pass 100%. The extra is the bookmaker's margin.",
       "visual": {
         "kind": "lines",
         "heading": "The chance a price implies",
         "lines": [
-          { "text": "second ÷ (first + second)", "small": true, "at": 1 },
-          { "text": "3/1 → 1 ÷ (3 + 1) = 25%", "at": 2 },
-          { "text": "4/6 → 6 ÷ (4 + 6) = 60%", "at": 3 },
-          { "text": "Every outcome added up: more than 100%", "at": 4 },
-          { "text": "The extra is the bookmaker's margin", "mark": true, "at": 5 }
+          {
+            "text": "second ÷ (first + second)",
+            "small": true,
+            "at": 1
+          },
+          {
+            "text": "3/1 → 1 ÷ (3 + 1) = 25%",
+            "at": 2
+          },
+          {
+            "text": "4/6 → 6 ÷ (4 + 6) = 60%",
+            "at": 3
+          },
+          {
+            "text": "Every outcome added up: more than 100%",
+            "at": 4
+          },
+          {
+            "text": "The extra is the bookmaker's margin",
+            "mark": true,
+            "at": 5
+          }
         ]
       }
     },
@@ -70,14 +144,28 @@
         "kind": "slips",
         "heading": "One trap",
         "slips": [
-          { "label": "FREE BET", "lines": ["£10 at 2/1", "the stake isn't returned"], "strikeResult": "£30", "result": "£20", "tone": "loss", "at": 1 }
+          {
+            "label": "FREE BET",
+            "lines": [
+              "£10 at 2/1",
+              "the stake isn't returned"
+            ],
+            "strikeResult": "£30",
+            "result": "£20",
+            "tone": "loss",
+            "at": 1
+          }
         ]
       }
     },
     {
       "say": "Convert any price with our free odds converter at Wager Observer. Gambling is for over-eighteens. If it stops being fun, the National Gambling Helpline is free on oh eight oh eight, eight oh two oh, one three three.",
       "caption": "Convert any price with our free odds converter at WagerObserver. Gambling is for over-18s. If it stops being fun, the National Gambling Helpline is free on 0808 8020 133.",
-      "visual": { "kind": "end", "url": "wagerobserver.com", "tool": "Odds converter" }
+      "visual": {
+        "kind": "end",
+        "url": "wagerobserver.com",
+        "tool": "Odds converter"
+      }
     }
   ]
 }

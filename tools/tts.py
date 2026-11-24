@@ -31,7 +31,7 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("slug")
     ap.add_argument("--voice", default="bf_emma")
-    ap.add_argument("--speed", type=float, default=0.8)
+    ap.add_argument("--speed", type=float, default=0.84)
     a = ap.parse_args()
 
     video = json.loads((ROOT / "data" / f"{a.slug}.json").read_text())
