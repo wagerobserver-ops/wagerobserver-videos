@@ -5,16 +5,13 @@ import '@fontsource/ibm-plex-sans/400.css';
 import '@fontsource/ibm-plex-sans/600.css';
 import { Explainer } from './Explainer';
 import { FPS } from './theme';
-import { eachWay } from '../data/each-way';
-import eachWayTimings from '../data/each-way.timings.json';
-
-const VIDEOS = [{ video: eachWay, timings: eachWayTimings, audio: 'audio/each-way/full.wav' }];
+import { VIDEOS } from './videos';
 
 export const Root: React.FC = () => (
   <>
-    {VIDEOS.map(({ video, timings, audio }) => {
-      const frames = Math.round((timings.duration + 1.5) * FPS);
-      const props = { video, timings, audio };
+    {VIDEOS.map(({ video, timings }) => {
+      const frames = Math.round(timings.duration * FPS);
+      const props = { video, timings, audio: `audio/${video.slug}/full.wav` };
       return (
         <React.Fragment key={video.slug}>
           <Composition id={`${video.slug}-wide`} component={Explainer} durationInFrames={frames} fps={FPS} width={1920} height={1080} defaultProps={props} />

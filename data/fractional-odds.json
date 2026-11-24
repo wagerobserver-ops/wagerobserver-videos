@@ -1,0 +1,83 @@
+{
+  "slug": "fractional-odds",
+  "market": "uk",
+  "title": "Fractional odds explained: what 5/1, evens and 4/6 pay",
+  "scenes": [
+    {
+      "say": "Five to one. Four to six. Evens. Here's how to read any fractional price, and what it pays.",
+      "caption": "5/1. 4/6. Evens. Here's how to read any fractional price, and what it pays.",
+      "visual": { "kind": "title", "kicker": "Fractional odds explained", "title": "What 5/1, evens and 4/6 pay", "art": "art/uk-fractional-odds-1200.webp" }
+    },
+    {
+      "say": "The first number is what you win, the second is what you stake. At five to one, you win five pounds for every pound you bet, and your stake comes back too. So ten pounds at five to one returns sixty pounds.",
+      "caption": "The first number is what you win, the second is what you stake. At 5/1, you win £5 for every £1 you bet, and your stake comes back too. So £10 at 5/1 returns £60.",
+      "visual": {
+        "kind": "lines",
+        "heading": "5/1",
+        "lines": [
+          { "text": "5 = what you win · 1 = what you stake", "small": true, "at": 0.2 },
+          { "text": "£1 bet → £5 profit + £1 back", "at": 1 },
+          { "text": "£10 bet → £50 + £10", "at": 2 },
+          { "text": "£60 back", "mark": true, "tone": "ok", "at": 2.6 }
+        ]
+      }
+    },
+    {
+      "say": "When the first number is smaller, the price is odds-on, and you win less than you stake. Ten pounds at one to two returns fifteen pounds. At four to six, sixteen pounds sixty-seven. Evens doubles your money: ten pounds returns twenty.",
+      "caption": "When the first number is smaller, the price is odds-on, and you win less than you stake. £10 at 1/2 returns £15. At 4/6, £16.67. Evens doubles your money: £10 returns £20.",
+      "visual": {
+        "kind": "slips",
+        "heading": "Odds-on and evens, £10 stake",
+        "slips": [
+          { "label": "ODDS-ON", "lines": ["1/2", "win £1 for every £2"], "result": "£15 back", "tone": "plain", "at": 1 },
+          { "label": "ODDS-ON", "lines": ["4/6", "win £4 for every £6"], "result": "£16.67 back", "tone": "plain", "at": 2 },
+          { "label": "EVENS", "lines": ["1/1", "win £1 for every £1"], "result": "£20 back", "tone": "plain", "at": 3 }
+        ]
+      }
+    },
+    {
+      "say": "To turn a fraction into decimal odds, divide and add one. Five to one is six. Six to four is two and a half. Decimal odds include your stake, so multiply your bet by them for the full return.",
+      "caption": "To turn a fraction into decimal odds, divide and add 1. 5/1 is 6.0. 6/4 is 2.5. Decimal odds include your stake, so multiply your bet by them for the full return.",
+      "visual": {
+        "kind": "lines",
+        "heading": "Fraction → decimal: divide, add 1",
+        "lines": [
+          { "text": "5/1 → 5 ÷ 1 + 1 = 6.00", "at": 1 },
+          { "text": "6/4 → 6 ÷ 4 + 1 = 2.50", "at": 2 },
+          { "text": "£10 × 6.00 = £60", "mark": true, "at": 3.3 }
+        ]
+      }
+    },
+    {
+      "say": "The price also shows how likely the bookmaker thinks it is. Divide the second number by the two added together. Three to one is a twenty-five per cent chance. Four to six is sixty per cent. Add up every outcome in a market and you'll pass a hundred per cent. The extra is the bookmaker's margin, and it's how the bookmaker makes money whoever wins.",
+      "caption": "The price also shows how likely the bookmaker thinks it is. Divide the second number by the two added together. 3/1 is a 25% chance. 4/6 is 60%. Add up every outcome in a market and you'll pass 100%. The extra is the bookmaker's margin, and it's how the bookmaker makes money whoever wins.",
+      "visual": {
+        "kind": "lines",
+        "heading": "The chance a price implies",
+        "lines": [
+          { "text": "second ÷ (first + second)", "small": true, "at": 1 },
+          { "text": "3/1 → 1 ÷ (3 + 1) = 25%", "at": 2 },
+          { "text": "4/6 → 6 ÷ (4 + 6) = 60%", "at": 3 },
+          { "text": "Every outcome added up: more than 100%", "at": 4 },
+          { "text": "The extra is the bookmaker's margin", "mark": true, "at": 5 }
+        ]
+      }
+    },
+    {
+      "say": "One trap: a free bet's stake usually isn't returned. A ten-pound free bet that wins at two to one pays twenty pounds, not thirty.",
+      "caption": "One trap: a free bet's stake usually isn't returned. A £10 free bet that wins at 2/1 pays £20, not £30.",
+      "visual": {
+        "kind": "slips",
+        "heading": "One trap",
+        "slips": [
+          { "label": "FREE BET", "lines": ["£10 at 2/1", "the stake isn't returned"], "strikeResult": "£30", "result": "£20", "tone": "loss", "at": 1 }
+        ]
+      }
+    },
+    {
+      "say": "Convert any price with our free odds converter at Wager Observer. Gambling is for over-eighteens. If it stops being fun, the National Gambling Helpline is free on oh eight oh eight, eight oh two oh, one three three.",
+      "caption": "Convert any price with our free odds converter at WagerObserver. Gambling is for over-18s. If it stops being fun, the National Gambling Helpline is free on 0808 8020 133.",
+      "visual": { "kind": "end", "url": "wagerobserver.com", "tool": "Odds converter" }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "slug": "wagering-10x",
+  "market": "uk",
+  "title": "What 10x wagering means: the UK bonus cap in pounds",
+  "scenes": [
+    {
+      "say": "Since January twenty twenty-six, a site licensed in Great Britain can't ask you to bet a bonus more than ten times before you withdraw. Here's what that means in pounds.",
+      "caption": "Since January 2026, a site licensed in Great Britain can't ask you to bet a bonus more than 10 times before you withdraw. Here's what that means in pounds.",
+      "visual": { "kind": "title", "kicker": "The UK wagering cap · since 19 January 2026", "title": "What 10x means in pounds", "big": "10x" }
+    },
+    {
+      "say": "The cap is measured against the bonus, not your deposit. A twenty-pound bonus can need at most two hundred pounds of bets.",
+      "caption": "The cap is measured against the bonus, not your deposit. A £20 bonus can need at most £200 of bets.",
+      "visual": {
+        "kind": "lines",
+        "heading": "Measured against the bonus",
+        "lines": [
+          { "text": "10 × your deposit", "strike": true, "at": 0.3 },
+          { "text": "10 × the bonus", "at": 0.6 },
+          { "text": "£20 bonus × 10 = £200 of bets", "mark": true, "at": 1 }
+        ]
+      }
+    },
+    {
+      "say": "Every bet costs something on average. On a slot that returns ninety-six per cent, each hundred pounds you bet costs four pounds on average. Clearing that bonus at ten times costs about eight pounds, so on average the bonus is worth about twelve.",
+      "caption": "Every bet costs something on average. On a slot that returns 96%, each £100 you bet costs £4 on average. Clearing that bonus at 10x costs about £8, so on average the bonus is worth about £12.",
+      "visual": {
+        "kind": "table",
+        "heading": "A £20 bonus on a slot that returns 96%",
+        "head": ["Wagering", "Bets", "Average cost", "Worth"],
+        "rows": [
+          { "cells": ["10x, the cap", "£200", "£8", "£12"], "at": 2, "mark": true }
+        ],
+        "note": "Averages over many players: £4 lost per £100 bet"
+      }
+    },
+    {
+      "say": "Before the cap, thirty-five times was common. That's seven hundred pounds of bets, costing about twenty-eight. The bonus was worth less than nothing: minus eight pounds, on average.",
+      "caption": "Before the cap, 35x was common. That's £700 of bets, costing about £28. The bonus was worth less than nothing: −£8, on average.",
+      "visual": {
+        "kind": "table",
+        "heading": "A £20 bonus on a slot that returns 96%",
+        "head": ["Wagering", "Bets", "Average cost", "Worth"],
+        "rows": [
+          { "cells": ["10x, the cap", "£200", "£8", "£12"] },
+          { "cells": ["35x, before 2026", "£700", "£28", "−£8"], "tone": "loss", "at": 1 }
+        ],
+        "note": "Averages over many players: £4 lost per £100 bet"
+      }
+    },
+    {
+      "say": "Game weighting still matters. If roulette counts thirty per cent of each stake, clearing the same bonus takes about six hundred and sixty-seven pounds of bets, not two hundred.",
+      "caption": "Game weighting still matters. If roulette counts 30% of each stake, clearing the same bonus takes about £667 of bets, not £200.",
+      "visual": {
+        "kind": "lines",
+        "heading": "Game weighting",
+        "lines": [
+          { "text": "Roulette counts 30%: £1 bet → 30p counted", "small": true, "at": 0.5 },
+          { "text": "£200 ÷ 0.30 ≈ £667 of bets", "at": 1.3 },
+          { "text": "£200", "strike": true, "at": 1.75 }
+        ]
+      }
+    },
+    {
+      "say": "The cap doesn't change time limits, maximum bet rules or caps on winnings, so check those in the terms. And these are averages: over a few hundred pounds of spins, your own result can be much better or much worse.",
+      "caption": "The cap doesn't change time limits, maximum bet rules or caps on winnings, so check those in the terms. And these are averages: over a few hundred pounds of spins, your own result can be much better or much worse.",
+      "visual": {
+        "kind": "checklist",
+        "heading": "Still in the terms",
+        "items": [
+          { "text": "Time limits", "kind": "flag", "at": 0.25 },
+          { "text": "Maximum bet rules", "kind": "flag", "at": 0.4 },
+          { "text": "Caps on winnings", "kind": "flag", "at": 0.55 },
+          { "text": "Averages, not your result", "kind": "flag", "at": 1 }
+        ]
+      }
+    },
+    {
+      "say": "Gambling costs money on average. See the sums for any bonus with our free wagering calculator at Wager Observer. Gambling is for over-eighteens. If it stops being fun, the National Gambling Helpline is free on oh eight oh eight, eight oh two oh, one three three.",
+      "caption": "Gambling costs money on average. See the sums for any bonus with our free wagering calculator at WagerObserver. Gambling is for over-18s. If it stops being fun, the National Gambling Helpline is free on 0808 8020 133.",
+      "visual": { "kind": "end", "url": "wagerobserver.com", "tool": "Wagering calculator" }
+    }
+  ]
+}

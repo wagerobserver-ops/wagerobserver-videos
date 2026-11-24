@@ -1,0 +1,68 @@
+# Narrates (Kokoro) and renders (Remotion) videos, and keeps the MP4s as an artifact for 30 days.
+# Runs by hand (Actions → Render → Run workflow, one slug or "all") and on every push that changes
+# a video's data, script data or the video code. Public repo: these minutes are free.
+name: Render
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: 'Video slug (data/<slug>.json), or "all"'
+        default: all
+  push:
+    branches: [main]
+    paths: ['data/*.json', 'src/**', 'tools/**', 'public/art/**', 'package-lock.json']
+
+concurrency:
+  group: render-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Kokoro model cache
+        uses: actions/cache@v4
+        with:
+          path: models
+          key: kokoro-v1.0
+      - run: pip install -r requirements.txt
+      - run: npm ci
+      - run: npx remotion browser ensure
+      - name: Which videos
+        id: which
+        run: |
+          s="${{ inputs.slug }}"
+          if [ -z "$s" ] || [ "$s" = all ]; then s=$(ls data/*.json | grep -v timings | xargs -n1 basename | sed 's/\.json$//' | tr '\n' ' '); fi
+          echo "slugs=$s" >> "$GITHUB_OUTPUT"
+      - name: Narrate
+        run: for s in ${{ steps.which.outputs.slugs }}; do python3 tools/tts.py "$s"; done
+      - name: Timings unchanged
+        run: |
+          # The committed timings drive the picture. If the voice changed them, commit the new ones first.
+          git diff --stat -- data/*.timings.json
+          git diff --quiet -- data/*.timings.json || echo "::warning::Narration timings changed: run tools/tts.py locally and commit data/*.timings.json"
+      - name: Render
+        run: |
+          mkdir -p out
+          for s in ${{ steps.which.outputs.slugs }}; do
+            npx remotion render src/index.ts "$s-wide" "out/$s-wide.mp4" --crf=20 --log=error
+            npx remotion render src/index.ts "$s-tall" "out/$s-tall.mp4" --crf=20 --log=error
+            npx remotion still src/index.ts "$s-wide" "out/$s-thumb.png" --frame=150 --log=error
+          done
+          ls -la out
+      - uses: actions/upload-artifact@v4
+        with:
+          name: videos
+          path: out/
+          retention-days: 30

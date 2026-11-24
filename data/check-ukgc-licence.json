@@ -1,0 +1,87 @@
+{
+  "slug": "check-ukgc-licence",
+  "market": "uk",
+  "title": "How to check a Gambling Commission licence in four steps",
+  "scenes": [
+    {
+      "say": "Every betting and casino site that takes customers in Great Britain needs a licence from the Gambling Commission. Checking one takes about two minutes.",
+      "caption": "Every betting and casino site that takes customers in Great Britain needs a licence from the Gambling Commission. Checking one takes about two minutes.",
+      "visual": { "kind": "title", "kicker": "Check a licence in four steps", "title": "Is this site licensed in Great Britain?", "art": "art/uk-check-licence-1200.webp" }
+    },
+    {
+      "say": "Step one: scroll to the bottom of the site. A licensed operator names the company behind it and gives its Gambling Commission account number.",
+      "caption": "Step 1: scroll to the bottom of the site. A licensed operator names the company behind it and gives its Gambling Commission account number.",
+      "visual": {
+        "kind": "card",
+        "step": "Step 1",
+        "heading": "Find the account number",
+        "chip": "Example",
+        "rows": [
+          { "label": "Site footer", "value": "Example Bets Ltd", "at": 1 },
+          { "label": "Licence", "value": "Gambling Commission account 000000", "mark": true, "at": 1.6 }
+        ],
+        "caption": "Invented example, for illustration"
+      }
+    },
+    {
+      "say": "Step two: open the Gambling Commission's public register, and search for that number or the company's name.",
+      "caption": "Step 2: open the Gambling Commission's public register, and search for that number or the company's name.",
+      "visual": {
+        "kind": "card",
+        "step": "Step 2",
+        "heading": "Search the public register",
+        "rows": [
+          { "label": "Register", "value": "gamblingcommission.gov.uk/public-register", "at": 0.3 },
+          { "label": "Search", "value": "000000  or  Example Bets Ltd", "mark": true, "at": 0.65 }
+        ]
+      }
+    },
+    {
+      "say": "Step three: check the licence is active, and for the right kind of gambling: betting for a bookmaker, casino for a casino.",
+      "caption": "Step 3: check the licence is active, and for the right kind of gambling: betting for a bookmaker, casino for a casino.",
+      "visual": {
+        "kind": "card",
+        "step": "Step 3",
+        "heading": "Active, for the right gambling",
+        "chip": "Example",
+        "rows": [
+          { "label": "Status", "value": "Active", "tick": true, "at": 0.3 },
+          { "label": "Activities", "value": "General betting · Casino", "tick": true, "mark": true, "at": 0.6 }
+        ]
+      }
+    },
+    {
+      "say": "Step four: check the site is really theirs. The register lists the web addresses each licensee uses, and the site you're on should be one of them.",
+      "caption": "Step 4: check the site is really theirs. The register lists the web addresses each licensee uses, and the site you're on should be one of them.",
+      "visual": {
+        "kind": "card",
+        "step": "Step 4",
+        "heading": "The site's address is on the licence",
+        "chip": "Example",
+        "rows": [
+          { "label": "Domain names", "value": "example.com", "at": 1 },
+          { "label": "", "value": "casino.example.com", "at": 1.2 },
+          { "label": "You're on", "value": "example.com", "mark": true, "tick": true, "at": 1.6 }
+        ]
+      }
+    },
+    {
+      "say": "Watch for red flags: no account number, or one that leads to a different company. Only a licence from somewhere else. No deposit limits and no mention of GAMSTOP. If you see them, don't sign up.",
+      "caption": "Watch for red flags: no account number, or one that leads to a different company. Only a licence from somewhere else. No deposit limits and no mention of GAMSTOP. If you see them, don't sign up.",
+      "visual": {
+        "kind": "checklist",
+        "heading": "Red flags: don't sign up",
+        "items": [
+          { "text": "No account number, or a different company", "kind": "flag", "at": 0.3 },
+          { "text": "Only a licence from somewhere else", "kind": "flag", "at": 1 },
+          { "text": "No deposit limits, no GAMSTOP", "kind": "flag", "at": 2 }
+        ]
+      }
+    },
+    {
+      "say": "A licence brings age checks, deposit limits, GAMSTOP and an independent route for complaints. The full guide is at Wager Observer. Gambling is for over-eighteens. If it stops being fun, the National Gambling Helpline is free on oh eight oh eight, eight oh two oh, one three three.",
+      "caption": "A licence brings age checks, deposit limits, GAMSTOP and an independent route for complaints. The full guide is at WagerObserver. Gambling is for over-18s. If it stops being fun, the National Gambling Helpline is free on 0808 8020 133.",
+      "visual": { "kind": "end", "url": "wagerobserver.com", "tool": "How to check a licence", "points": ["Age checks", "Deposit limits", "GAMSTOP", "Independent complaints"] }
+    }
+  ]
+}

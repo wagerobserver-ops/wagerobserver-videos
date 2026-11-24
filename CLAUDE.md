@@ -14,7 +14,7 @@ The plan, the rules and the calendar are in the Project doc `claude/video-plano.
 ## How a video is made
 
 1. **Script:** `scripts/<slug>.md` (scenes: what is on screen and what is said, the description, the figures checked against the page).
-2. **Data:** `data/<slug>.ts`: for each scene `say` (what the voice reads, numbers in words: "ten to one", "oh eight oh eight…"), `caption` (the subtitle, numbers as figures) and `visual` (one of the kinds in `src/types.ts`). Register it in `src/videos.ts`.
+2. **Data:** `data/<slug>.json`: for each scene `say` (what the voice reads, numbers in words: "ten to one", "oh eight oh eight…"), `caption` (the subtitle, numbers as figures) and `visual` (one of the kinds in `src/types.ts`). Register it in `src/videos.ts`. Items can carry `at`: the sentence of the scene (0 = first; 2.5 = halfway through the third) when they come in, so the picture follows the voice. `say` and `caption` need the same number of sentences: subtitles change sentence by sentence.
 3. **Voice:** `python3 tools/tts.py <slug>` with Kokoro (kokoro-onnx, model v1.0, voice `bf_emma`, chosen by Tiago on 23 Nov 2026), about 150 words a minute. It writes `public/audio/<slug>/full.wav` (not committed) and `data/<slug>.timings.json` (committed: start and end of every scene and every sentence).
 4. **Render:** `npx remotion render src/index.ts <slug>-wide out/<slug>-wide.mp4` (16:9) and `<slug>-tall` (9:16, for Shorts, X, LinkedIn and Bluesky). The workflow `render.yml` does steps 3 and 4 on GitHub and keeps the MP4s as an artifact.
 5. **Upload:** YouTube Data API (not built yet): age-restricted, not made for kids, category Education, en-GB, comments off.
