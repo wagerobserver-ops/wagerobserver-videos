@@ -1,0 +1,86 @@
+{
+  "slug": "lucky-15",
+  "market": "uk",
+  "title": "Lucky 15 explained: 15 bets, and how many winners you need",
+  "scenes": [
+    {
+      "say": "A Lucky 15 is fifteen bets on four selections. One winner returns something, but it rarely covers the stake.",
+      "caption": "A Lucky 15 is 15 bets on four selections. One winner returns something, but it rarely covers the stake.",
+      "visual": { "kind": "title", "kicker": "Lucky 15 explained", "title": "15 bets, and how many winners you need", "art": "art/uk-lucky-15-1200.webp" }
+    },
+    {
+      "say": "It's every combination: four singles, six doubles, four trebles and a four-fold. The stake is per bet, so one pound a bet costs fifteen pounds.",
+      "caption": "It's every combination: 4 singles, 6 doubles, 4 trebles and a four-fold. The stake is per bet, so £1 a bet costs £15.",
+      "visual": {
+        "kind": "lines",
+        "heading": "What's inside",
+        "lines": [
+          { "text": "4 singles + 6 doubles + 4 trebles + 1 four-fold", "at": 0.25 },
+          { "text": "= 15 bets", "at": 0.8 },
+          { "text": "£1 a bet = £15", "mark": true, "at": 1.5 }
+        ]
+      }
+    },
+    {
+      "say": "Here's one pound a bet on four horses at six to four, two to one, three to one and four to one. The four to one alone returns five pounds. Add the three to one, and it's twenty-nine. Three winners, a hundred and nineteen. All four, four hundred and nineteen.",
+      "caption": "Here's £1 a bet on four horses at 6/4, 2/1, 3/1 and 4/1. The 4/1 alone returns £5. Add the 3/1, and it's £29. Three winners, £119. All four, £419.",
+      "visual": {
+        "kind": "table",
+        "heading": "£1 Lucky 15 (£15 staked), win only",
+        "head": ["Winners", "Back"],
+        "rows": [
+          { "cells": ["The 4/1 only", "£5.00"], "tone": "loss", "at": 1 },
+          { "cells": ["The 3/1 and 4/1", "£29.00"], "at": 2 },
+          { "cells": ["All but the 6/4", "£119.00"], "at": 3 },
+          { "cells": ["All four", "£419.00"], "at": 4 }
+        ],
+        "note": "Illustrative prices: 6/4, 2/1, 3/1 and 4/1"
+      }
+    },
+    {
+      "say": "One winner covers the fifteen pounds only at fourteen to one or bigger. Two winners at two to one each just get your fifteen back. So at short prices, a Lucky 15 can lose money even when half your selections win.",
+      "caption": "One winner covers the £15 only at 14/1 or bigger. Two winners at 2/1 each just get your £15 back. So at short prices, a Lucky 15 can lose money even when half your selections win.",
+      "visual": {
+        "kind": "lines",
+        "heading": "Breaking even",
+        "lines": [
+          { "text": "1 winner: needs 14/1 or bigger", "at": 0.2 },
+          { "text": "2 winners at 2/1: £15 back, no profit", "at": 1.2 },
+          { "text": "Half your selections can win and you still lose", "tone": "loss", "mark": true, "at": 2.3 }
+        ]
+      }
+    },
+    {
+      "say": "If a horse is a non-runner, the bets that include it are settled without it: in effect, a two-pound Patent on the other three, plus a pound back. Each way doubles the cost to thirty pounds, and at short prices four placed horses can return less than that.",
+      "caption": "If a horse is a non-runner, the bets that include it are settled without it: in effect, a £2 Patent on the other three, plus £1 back. Each way doubles the cost to £30, and at short prices four placed horses can return less than that.",
+      "visual": {
+        "kind": "lines",
+        "heading": "Non-runners and each way",
+        "lines": [
+          { "text": "Non-runner → £2 Patent on the other three + £1 back", "at": 0.3 },
+          { "text": "Each way: £30 staked", "at": 1.2 },
+          { "text": "4 placed at 4/5 to 6/4 (⅕ odds): £23.59 back", "tone": "loss", "mark": true, "at": 1.6 }
+        ]
+      }
+    },
+    {
+      "say": "And every bet inside carries the bookmaker's margin. With five per cent on each selection, ten pounds in singles gets back nine pounds fifty-two on average, and in a Lucky 15, nine pounds two.",
+      "caption": "And every bet inside carries the bookmaker's margin. With 5% on each selection, £10 in singles gets back £9.52 on average, and in a Lucky 15, £9.02.",
+      "visual": {
+        "kind": "table",
+        "heading": "Average return on £10, 5% margin on each selection",
+        "head": ["Bet", "On average"],
+        "rows": [
+          { "cells": ["Singles", "£9.52"], "at": 1.4 },
+          { "cells": ["Lucky 15", "£9.02"], "tone": "loss", "mark": true, "at": 1.75 }
+        ],
+        "note": "Illustrative: real margins vary by bookmaker and market"
+      }
+    },
+    {
+      "say": "Work out your own odds with our free Lucky 15 calculator at Wager Observer. Gambling is for over-eighteens. If it stops being fun, the National Gambling Helpline is free on oh eight oh eight, eight oh two oh, one three three.",
+      "caption": "Work out your own odds with our free Lucky 15 calculator at WagerObserver. Gambling is for over-18s. If it stops being fun, the National Gambling Helpline is free on 0808 8020 133.",
+      "visual": { "kind": "end", "url": "wagerobserver.com", "tool": "Lucky 15 calculator" }
+    }
+  ]
+}

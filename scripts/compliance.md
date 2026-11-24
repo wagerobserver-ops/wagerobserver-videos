@@ -92,3 +92,27 @@ VERIFICAÇÕES FEITAS
 - O link da descrição vai para /uk/tools/, que mostra três ofertas classificadas Fair
   (risco já aceite no plano de 20 nov).
 ```
+
+## Video 7 (Lucky 15), reviewed 24 Nov 2026
+
+```
+PARECER: APROVADO
+Conteúdo: lucky-15.md / data/lucky-15.json (guião, ecrã e descrição YouTube)
+Mercado: UK (Great Britain)   Revisto a: 24 nov 2026
+
+BLOQUEANTES
+(nenhum)
+
+CORRIGIR
+(nenhum)
+
+VERIFICAÇÕES FEITAS
+- Sem operadores, ofertas, bónus de Lucky 15 (promoções: ficam fora de propósito) ou links /go/.
+- 18+ no início e no canto; helpline e GAMSTOP no fim e na descrição; divulgação e voz
+  sintética na descrição.
+- Os £419 de quatro vencedores vêm logo a seguir ao ponto de equilíbrio e a três casos em
+  que se perde (um vencedor curto, metade das seleções a ganhar, each way a preços curtos)
+  e à margem que reduz o retorno médio. Preços marcados como ilustrativos. Nada de
+  promessas, urgência ou palavras proibidas; sem cavalos, jóqueis ou pessoas na arte.
+- Números calculados com o código do site (ver o guião).
+```

@@ -11,6 +11,8 @@ import acca from '../data/accumulator.json';
 import accaT from '../data/accumulator.timings.json';
 import rule4 from '../data/rule-4.json';
 import rule4T from '../data/rule-4.timings.json';
+import lucky15 from '../data/lucky-15.json';
+import lucky15T from '../data/lucky-15.timings.json';
 
 // Every video: its data, the timings written by tools/tts.py and its narration.
 export const VIDEOS: { video: VideoDef; timings: Timings }[] = [
@@ -20,4 +22,5 @@ export const VIDEOS: { video: VideoDef; timings: Timings }[] = [
   { video: licence as VideoDef, timings: licenceT },
   { video: acca as VideoDef, timings: accaT },
   { video: rule4 as VideoDef, timings: rule4T },
+  { video: lucky15 as VideoDef, timings: lucky15T },
 ];
