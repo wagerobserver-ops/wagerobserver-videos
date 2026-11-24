@@ -116,3 +116,26 @@ VERIFICAÇÕES FEITAS
   promessas, urgência ou palavras proibidas; sem cavalos, jóqueis ou pessoas na arte.
 - Números calculados com o código do site (ver o guião).
 ```
+
+## Video 8 (double), reviewed 24 Nov 2026
+
+```
+PARECER: APROVADO
+Conteúdo: double.md / data/double.json (guião, ecrã e descrição YouTube)
+Mercado: UK (Great Britain)   Revisto a: 24 nov 2026
+
+BLOQUEANTES
+(nenhum)
+
+CORRIGIR
+(nenhum)
+
+VERIFICAÇÕES FEITAS
+- Sem operadores, ofertas ou links /go/. «Boosted multiples» é referido só como regra de
+  liquidação («check the rules»), sem promover nenhum.
+- 18+ no início e no canto; helpline e GAMSTOP no fim e na descrição; divulgação e voz
+  sintética na descrição.
+- Mostra quando se perde: a dupla não paga nada se só uma ganha, e o each-way a preços
+  curtos devolve £9,10 de £10. Sem promessas, urgência ou palavras proibidas.
+- Números calculados com o código do site (ver o guião).
+```
