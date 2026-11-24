@@ -6,7 +6,12 @@
     {
       "say": "A double is one bet on two selections, and both have to win. It's the smallest accumulator, and the each-way version is two bets, not one.",
       "caption": "A double is one bet on two selections, and both have to win. It's the smallest accumulator, and the each-way version is two bets, not one.",
-      "visual": { "kind": "title", "kicker": "Double bets explained", "title": "Two selections, one bet, both must win", "art": "art/uk-double-1200.webp" }
+      "visual": {
+        "kind": "title",
+        "kicker": "Double bets explained",
+        "title": "Two selections, one bet, both must win",
+        "art": "art/uk-double-1200.webp"
+      }
     },
     {
       "say": "Here's five pounds on a six to four and a two to one: the return from the first rides on the second. Five, times two and a half, times three, is thirty-seven pounds fifty.",
@@ -15,9 +20,21 @@
         "kind": "lines",
         "heading": "£5 double at 6/4 and 2/1",
         "lines": [
-          { "text": "£5 × 2.50 = £12.50, rides on", "at": 0.5 },
-          { "text": "£12.50 × 3.00 = £37.50", "mark": true, "tone": "ok", "at": 1.3 },
-          { "text": "Stake included", "small": true, "at": 1.7 }
+          {
+            "text": "£5 × 2.50 = £12.50, rides on",
+            "at": 0.5
+          },
+          {
+            "text": "£12.50 × 3.00 = £37.50",
+            "mark": true,
+            "tone": "ok",
+            "at": 1.3
+          },
+          {
+            "text": "Stake included",
+            "small": true,
+            "at": 1.7
+          }
         ]
       }
     },
@@ -27,12 +44,45 @@
       "visual": {
         "kind": "table",
         "heading": "£5 as one double, or as two singles",
-        "head": ["Result", "Double", "Two singles"],
+        "head": [
+          "Result",
+          "Double",
+          "Two singles"
+        ],
         "rows": [
-          { "cells": ["Both win", "£37.50", "£13.75"], "at": 0.3 },
-          { "cells": ["Only the 6/4", "£0", "£6.25"], "at": 1.3 },
-          { "cells": ["Only the 2/1", "£0", "£7.50"], "at": 1.6 },
-          { "cells": ["Neither", "£0", "£0"], "tone": "loss", "at": 2 }
+          {
+            "cells": [
+              "Both win",
+              "£37.50",
+              "£13.75"
+            ],
+            "at": 0.3
+          },
+          {
+            "cells": [
+              "Only the 6/4",
+              "£0",
+              "£6.25"
+            ],
+            "at": 1.3
+          },
+          {
+            "cells": [
+              "Only the 2/1",
+              "£0",
+              "£7.50"
+            ],
+            "at": 1.6
+          },
+          {
+            "cells": [
+              "Neither",
+              "£0",
+              "£0"
+            ],
+            "tone": "loss",
+            "at": 2
+          }
         ]
       }
     },
@@ -43,8 +93,26 @@
         "kind": "slips",
         "heading": "£5 each-way double = £10, ⅕ the odds",
         "slips": [
-          { "label": "6/4 AND 2/1 · BOTH PLACED", "lines": ["£5 × 1.30 × 1.40", "the place double"], "result": "£9.10 back", "tone": "loss", "at": 1.3 },
-          { "label": "8/1 AND 10/1 · BOTH PLACED", "lines": ["£5 × 2.60 × 3.00", "the place double"], "result": "£39.00 back", "tone": "plain", "at": 2.3 }
+          {
+            "label": "6/4 AND 2/1",
+            "lines": [
+              "1.30 × 1.40",
+              "£5 place double, both placed"
+            ],
+            "result": "£9.10 back",
+            "tone": "loss",
+            "at": 1.3
+          },
+          {
+            "label": "8/1 AND 10/1",
+            "lines": [
+              "2.60 × 3.00",
+              "£5 place double, both placed"
+            ],
+            "result": "£39.00 back",
+            "tone": "plain",
+            "at": 2.3
+          }
         ]
       }
     },
@@ -55,16 +123,32 @@
         "kind": "lines",
         "heading": "A non-runner",
         "lines": [
-          { "text": "× 3.00", "strike": true, "at": 0.3 },
-          { "text": "£5 × 2.50 = £12.50, a single", "mark": true, "at": 0.7 },
-          { "text": "Boosted multiples: sometimes void. Check the rules", "small": true, "at": 1 }
+          {
+            "text": "× 3.00",
+            "strike": true,
+            "at": 0.3
+          },
+          {
+            "text": "£5 × 2.50 = £12.50, a single",
+            "mark": true,
+            "at": 0.7
+          },
+          {
+            "text": "Boosted multiples: sometimes void. Check the rules",
+            "small": true,
+            "at": 1
+          }
         ]
       }
     },
     {
       "say": "Work out any double or each-way double with our free calculator at Wager Observer. Gambling is for over-eighteens. If it stops being fun, the National Gambling Helpline is free on oh eight oh eight, eight oh two oh, one three three.",
       "caption": "Work out any double or each-way double with our free calculator at WagerObserver. Gambling is for over-18s. If it stops being fun, the National Gambling Helpline is free on 0808 8020 133.",
-      "visual": { "kind": "end", "url": "wagerobserver.com", "tool": "Double calculator" }
+      "visual": {
+        "kind": "end",
+        "url": "wagerobserver.com",
+        "tool": "Double calculator"
+      }
     }
   ]
 }
