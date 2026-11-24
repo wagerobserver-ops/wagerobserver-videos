@@ -20,9 +20,11 @@ concurrency:
 jobs:
   render:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 150
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -43,7 +45,14 @@ jobs:
         id: which
         run: |
           s="${{ inputs.slug }}"
-          if [ -z "$s" ] || [ "$s" = all ]; then s=$(ls data/*.json | grep -v timings | xargs -n1 basename | sed 's/\.json$//' | tr '\n' ' '); fi
+          if [ "${{ github.event_name }}" = push ]; then
+            # On a push, only the videos whose data changed; everything if the shared code changed.
+            changed=$(git diff --name-only HEAD~1 HEAD)
+            if echo "$changed" | grep -v '^src/videos.ts$' | grep -qE '^(src/|tools/tts.py|package-lock.json)'; then s=all
+            else s=$(echo "$changed" | grep -E '^data/[^/]+\.json$' | grep -v timings | xargs -rn1 basename | sed 's/\.json$//' | tr '\n' ' '); fi
+            [ -z "$s" ] && s=none
+          fi
+          if [ "$s" = none ]; then s=""; elif [ -z "$s" ] || [ "$s" = all ]; then s=$(ls data/*.json | grep -v timings | xargs -n1 basename | sed 's/\.json$//' | tr '\n' ' '); fi
           echo "slugs=$s" >> "$GITHUB_OUTPUT"
       - name: Narrate
         run: for s in ${{ steps.which.outputs.slugs }}; do python3 tools/tts.py "$s"; done
