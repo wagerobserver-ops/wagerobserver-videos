@@ -1,0 +1,181 @@
+{
+  "slug": "rule-4",
+  "market": "uk",
+  "title": "Rule 4 deductions explained: what a withdrawn horse takes off your winnings",
+  "scenes": [
+    {
+      "say": "When a horse is withdrawn after you've bet, the bookmaker can take a Rule 4 deduction from your winnings. Here's how much, and why.",
+      "caption": "When a horse is withdrawn after you've bet, the bookmaker can take a Rule 4 deduction from your winnings. Here's how much, and why.",
+      "visual": {
+        "kind": "title",
+        "kicker": "Rule 4 explained",
+        "title": "What a withdrawn horse takes off your winnings",
+        "art": "art/uk-rule-4-1200.webp"
+      }
+    },
+    {
+      "say": "A late withdrawal gives the rest of the field a better chance, so the odds you took are now bigger than they should be. Rule 4 evens that out with a deduction from the winnings of bets placed before the withdrawal.",
+      "caption": "A late withdrawal gives the rest of the field a better chance, so the odds you took are now bigger than they should be. Rule 4 evens that out with a deduction from the winnings of bets placed before the withdrawal.",
+      "visual": {
+        "kind": "lines",
+        "heading": "Why it exists",
+        "lines": [
+          {
+            "text": "A runner is withdrawn",
+            "at": 0.15
+          },
+          {
+            "text": "The rest have a better chance",
+            "at": 0.45
+          },
+          {
+            "text": "Your price is now too big",
+            "at": 0.75
+          },
+          {
+            "text": "A deduction from your winnings evens it out",
+            "mark": true,
+            "at": 1.2
+          }
+        ]
+      }
+    },
+    {
+      "say": "You bet ten pounds to win at five to one. Then a horse priced at three to one is withdrawn: that's twenty-five pence in the pound. Your fifty pounds of winnings become thirty-seven pounds fifty, so the bet returns forty-seven pounds fifty instead of sixty.",
+      "caption": "You bet £10 to win at 5/1. Then a horse priced at 3/1 is withdrawn: that's 25p in the pound. Your £50 of winnings become £37.50, so the bet returns £47.50 instead of £60.",
+      "visual": {
+        "kind": "slips",
+        "heading": "£10 to win at 5/1",
+        "slips": [
+          {
+            "label": "NO WITHDRAWAL",
+            "lines": [
+              "£50 + £10",
+              "winnings + stake"
+            ],
+            "result": "£60 back",
+            "tone": "plain",
+            "at": 0.3
+          },
+          {
+            "label": "3/1 RUNNER OUT",
+            "lines": [
+              "£37.50 + £10",
+              "25p in the £ off the winnings"
+            ],
+            "strikeResult": "£60",
+            "result": "£47.50",
+            "tone": "loss",
+            "at": 1.3
+          }
+        ]
+      }
+    },
+    {
+      "say": "The shorter the withdrawn horse's price, the bigger the deduction. Evens takes forty-five pence. Three to one, twenty-five pence. Six to one, ten pence. Longer than fourteen to one, nothing.",
+      "caption": "The shorter the withdrawn horse's price, the bigger the deduction. Evens takes 45p. 3/1, 25p. 6/1, 10p. Longer than 14/1, nothing.",
+      "visual": {
+        "kind": "table",
+        "heading": "Rule 4: some of the bands",
+        "head": [
+          "Withdrawn runner",
+          "Deduction"
+        ],
+        "rows": [
+          {
+            "cells": [
+              "Evens to 6/5",
+              "45p in the £"
+            ],
+            "at": 1
+          },
+          {
+            "cells": [
+              "12/5 to 3/1",
+              "25p in the £"
+            ],
+            "at": 2
+          },
+          {
+            "cells": [
+              "6/1 to 9/1",
+              "10p in the £"
+            ],
+            "at": 3
+          },
+          {
+            "cells": [
+              "Longer than 14/1",
+              "None"
+            ],
+            "at": 4
+          }
+        ],
+        "note": "The full table, from 1/9 (90p) to 14/1 (5p), is on the calculator page"
+      }
+    },
+    {
+      "say": "If a six to one runner comes out as well, the deductions add up: thirty-five pence, and the bet returns forty-two pounds fifty. They never go above ninety pence in the pound. And Rule 4 only touches your winnings: your stake comes back in full.",
+      "caption": "If a 6/1 runner comes out as well, the deductions add up: 35p, and the bet returns £42.50. They never go above 90p in the pound. And Rule 4 only touches your winnings: your stake comes back in full.",
+      "visual": {
+        "kind": "lines",
+        "heading": "Two withdrawals",
+        "lines": [
+          {
+            "text": "25p + 10p = 35p in the £",
+            "at": 0.4
+          },
+          {
+            "text": "£50 × 0.65 = £32.50 + £10 stake = £42.50",
+            "mark": true,
+            "at": 0.7
+          },
+          {
+            "text": "Never more than 90p in the £",
+            "small": true,
+            "at": 1
+          },
+          {
+            "text": "Your stake is never reduced",
+            "small": true,
+            "at": 2
+          }
+        ]
+      }
+    },
+    {
+      "say": "Starting price bets are usually not reduced, unless the horse comes out too late to form a new market. Each-way bets lose the same share on both parts.",
+      "caption": "Starting price bets are usually not reduced, unless the horse comes out too late to form a new market. Each-way bets lose the same share on both parts.",
+      "visual": {
+        "kind": "checklist",
+        "heading": "Good to know",
+        "items": [
+          {
+            "text": "Starting price bets: usually no deduction",
+            "kind": "good",
+            "at": 0.2
+          },
+          {
+            "text": "Unless the runner comes out too late for a new market",
+            "kind": "flag",
+            "at": 0.6
+          },
+          {
+            "text": "Each way: the same share off both parts",
+            "kind": "flag",
+            "at": 1
+          }
+        ]
+      }
+    },
+    {
+      "say": "Work out any deduction with our free Rule 4 calculator at Wager Observer. Gambling is for over-eighteens. If it stops being fun, the National Gambling Helpline is free on oh eight oh eight, eight oh two oh, one three three.",
+      "caption": "Work out any deduction with our free Rule 4 calculator at WagerObserver. Gambling is for over-18s. If it stops being fun, the National Gambling Helpline is free on 0808 8020 133.",
+      "visual": {
+        "kind": "end",
+        "url": "wagerobserver.com",
+        "tool": "Rule 4 calculator"
+      }
+    }
+  ]
+}

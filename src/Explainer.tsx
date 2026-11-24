@@ -226,7 +226,7 @@ const VisualBlock: React.FC<{ v: Visual; market: 'uk' | 'us'; first: boolean }> 
       );
     case 'table': {
       const n = v.head.length;
-      const cols = tall ? `repeat(${n}, ${Math.floor(860 / n)}px)` : n === 3 ? '420px 300px 300px' : n === 4 ? '440px 220px 300px 200px' : `repeat(${n}, ${Math.floor(1400 / n)}px)`;
+      const cols = tall ? `repeat(${n}, ${Math.floor(860 / n)}px)` : n === 2 ? '560px 400px' : n === 3 ? '420px 300px 300px' : n === 4 ? '440px 220px 300px 200px' : `repeat(${n}, ${Math.floor(1400 / n)}px)`;
       return (
         <Center>
           <Heading text={v.heading} />

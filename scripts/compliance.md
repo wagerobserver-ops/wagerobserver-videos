@@ -67,3 +67,28 @@ PONTOS EM ABERTO
 ## Videos 1 and 2 trimmed, 24 Nov 2026
 
 To keep every video under 100 s: each-way scene 4 drops "Your bet slip shows the terms that count." from the narration (it stays on screen); fractional-odds scene 2 drops "So", scene 5 drops "and it's how the bookmaker makes money whoever wins". Nothing added; no new claim. Verdicts unchanged.
+
+## Video 6 (Rule 4), reviewed 24 Nov 2026
+
+```
+PARECER: APROVADO
+Conteúdo: rule-4.md / data/rule-4.json (guião, ecrã e descrição YouTube)
+Mercado: UK (Great Britain)   Revisto a: 24 nov 2026
+
+BLOQUEANTES
+(nenhum)
+
+CORRIGIR
+(nenhum)
+
+VERIFICAÇÕES FEITAS
+- Sem operadores, ofertas ou links /go/; sem cavalos, jóqueis ou pessoas (a arte é a
+  colagem do site: boxes de estábulo vazias, tesoura, boletim).
+- 18+ no início e no canto; helpline e GAMSTOP no fim e na descrição; divulgação e voz
+  sintética na descrição.
+- Mostra perdas de valor (o retorno cai de £60 para £47,50 e £42,50) e diz que a dedução
+  faz parte das regras; nada de urgência, promessas ou palavras proibidas.
+- Números iguais à página e a RULE4_BANDS (ver o guião).
+- O link da descrição vai para /uk/tools/, que mostra três ofertas classificadas Fair
+  (risco já aceite no plano de 20 nov).
+```
