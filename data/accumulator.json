@@ -1,0 +1,197 @@
+{
+  "slug": "accumulator",
+  "market": "uk",
+  "title": "Accumulators explained: why the odds multiply, and so does the margin",
+  "scenes": [
+    {
+      "say": "An accumulator is one bet on several selections, and every one has to win. The odds multiply, and so does the bookmaker's margin.",
+      "caption": "An accumulator is one bet on several selections, and every one has to win. The odds multiply, and so does the bookmaker's margin.",
+      "visual": {
+        "kind": "title",
+        "kicker": "Accumulators explained",
+        "title": "The odds multiply, and so does the margin",
+        "art": "art/uk-accumulator-1200.webp"
+      }
+    },
+    {
+      "say": "Each win rolls everything on to the next: five pounds becomes ten, then eighteen, then twenty-seven, then sixty-seven pounds fifty.",
+      "caption": "Each win rolls everything on to the next: £5 becomes £10, then £18, then £27, then £67.50.",
+      "visual": {
+        "kind": "table",
+        "heading": "£5 on four selections",
+        "head": [
+          "Selection",
+          "Price",
+          "Rolls on to"
+        ],
+        "rows": [
+          {
+            "cells": [
+              "1",
+              "2.00 (Evens)",
+              "£10.00"
+            ],
+            "at": 0.35
+          },
+          {
+            "cells": [
+              "2",
+              "1.80 (4/5)",
+              "£18.00"
+            ],
+            "at": 0.5
+          },
+          {
+            "cells": [
+              "3",
+              "1.50 (1/2)",
+              "£27.00"
+            ],
+            "at": 0.65
+          },
+          {
+            "cells": [
+              "4",
+              "2.50 (6/4)",
+              "£67.50"
+            ],
+            "at": 0.8,
+            "mark": true,
+            "tone": "ok"
+          }
+        ]
+      }
+    },
+    {
+      "say": "The quick way: multiply your stake by every decimal price. Five, times two, times one point eight, times one point five, times two point five, is sixty-seven pounds fifty, your stake included. Lose any one selection, and the whole bet loses.",
+      "caption": "The quick way: multiply your stake by every decimal price. £5 × 2.00 × 1.80 × 1.50 × 2.50 = £67.50, your stake included. Lose any one selection, and the whole bet loses.",
+      "visual": {
+        "kind": "lines",
+        "heading": "Multiply every price",
+        "lines": [
+          {
+            "text": "£5 × 2.00 × 1.80 × 1.50 × 2.50",
+            "at": 1
+          },
+          {
+            "text": "= £67.50, stake included",
+            "mark": true,
+            "at": 1.7
+          },
+          {
+            "text": "One selection loses → £0",
+            "tone": "loss",
+            "at": 2
+          }
+        ]
+      }
+    },
+    {
+      "say": "If a match is postponed, that selection is usually void, and the bet carries on without it at lower odds. Drop the selection at one point eight, and it's settled as a treble: thirty-seven pounds fifty.",
+      "caption": "If a match is postponed, that selection is usually void, and the bet carries on without it at lower odds. Drop the selection at 1.80, and it's settled as a treble: £37.50.",
+      "visual": {
+        "kind": "lines",
+        "heading": "A void selection",
+        "lines": [
+          {
+            "text": "× 1.80 (postponed)",
+            "strike": true,
+            "at": 1
+          },
+          {
+            "text": "£5 × 2.00 × 1.50 × 2.50 = £37.50",
+            "mark": true,
+            "at": 1.5
+          },
+          {
+            "text": "Some special bets are voided entirely: check the rules",
+            "small": true,
+            "at": 1.8
+          }
+        ]
+      }
+    },
+    {
+      "say": "Every price includes the bookmaker's margin, and in an accumulator you pay it on every selection. With a five per cent margin on each, ten pounds on a single gets back nine pounds fifty-two on average. A four-fold gets back eight pounds twenty-three. An eight-fold, six pounds seventy-seven.",
+      "caption": "Every price includes the bookmaker's margin, and in an accumulator you pay it on every selection. With a 5% margin on each, £10 on a single gets back £9.52 on average. A four-fold gets back £8.23. An eight-fold, £6.77.",
+      "visual": {
+        "kind": "table",
+        "heading": "The cost the bet slip doesn't show",
+        "head": [
+          "Bet",
+          "On average",
+          "Given up"
+        ],
+        "rows": [
+          {
+            "cells": [
+              "Single",
+              "£9.52",
+              "£0.48"
+            ],
+            "at": 1
+          },
+          {
+            "cells": [
+              "Four-fold",
+              "£8.23",
+              "£1.77"
+            ],
+            "at": 2,
+            "tone": "loss"
+          },
+          {
+            "cells": [
+              "Eight-fold",
+              "£6.77",
+              "£3.23"
+            ],
+            "at": 3,
+            "tone": "loss",
+            "mark": true
+          }
+        ],
+        "note": "Average return on £10 with a 5% margin on each selection. Illustrative: real margins vary"
+      }
+    },
+    {
+      "say": "Before you place one, set a budget, use selections from different events, and check the price against a calculator. A long acca loses far more often than it wins.",
+      "caption": "Before you place one, set a budget, use selections from different events, and check the price against a calculator. A long acca loses far more often than it wins.",
+      "visual": {
+        "kind": "checklist",
+        "heading": "Before you place one",
+        "items": [
+          {
+            "text": "Set a budget first",
+            "kind": "good",
+            "at": 0.3
+          },
+          {
+            "text": "Selections from different events",
+            "kind": "good",
+            "at": 0.5
+          },
+          {
+            "text": "Check the price against a calculator",
+            "kind": "good",
+            "at": 0.75
+          },
+          {
+            "text": "A long acca loses far more often than it wins",
+            "kind": "flag",
+            "at": 1
+          }
+        ]
+      }
+    },
+    {
+      "say": "Work out any accumulator with our free calculator at Wager Observer. Gambling is for over-eighteens. If it stops being fun, the National Gambling Helpline is free on oh eight oh eight, eight oh two oh, one three three.",
+      "caption": "Work out any accumulator with our free calculator at WagerObserver. Gambling is for over-18s. If it stops being fun, the National Gambling Helpline is free on 0808 8020 133.",
+      "visual": {
+        "kind": "end",
+        "url": "wagerobserver.com",
+        "tool": "Accumulator calculator"
+      }
+    }
+  ]
+}

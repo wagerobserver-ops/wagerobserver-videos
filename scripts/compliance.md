@@ -34,3 +34,36 @@ PONTOS EM ABERTO
   (guias e /uk/tools/). Risco pequeno face à regra do YouTube sobre encaminhar para
   jogo; já aceite no plano de 20 nov, a vigiar.
 ```
+
+## Video 5 (accumulator), reviewed 24 Nov 2026
+
+```
+PARECER: APROVADO
+Conteúdo: accumulator.md / data/accumulator.json (guião, ecrã e descrição YouTube)
+Mercado: UK (Great Britain)   Revisto a: 24 nov 2026
+
+BLOQUEANTES
+(nenhum)
+
+CORRIGIR
+(nenhum)
+
+VERIFICAÇÕES FEITAS
+- Sem operadores, ofertas, códigos ou links /go/. Acca insurance e boosts (promoções) ficam
+  de fora do vídeo de propósito: um vídeo não carrega os termos significativos.
+- 18+ no cartão inicial e no canto; National Gambling Helpline 0808 8020 133 e GAMSTOP
+  no fim e na descrição; divulgação de afiliado e «Narration: synthetic voice» na descrição.
+- O vídeo mostra o custo: a margem que cresce com cada seleção (marcada como ilustrativa,
+  como na página), o bilhete que perde tudo se uma seleção perde, e «A long acca loses far
+  more often than it wins». Nada sugere que uma aposta grande é «valor».
+- Palavras proibidas: nenhuma. Sem urgência, sem promessas de ganho.
+- Números iguais aos da página /uk/guides/accumulator/ (ver o guião).
+
+PONTOS EM ABERTO
+- Como nos outros vídeos, os links da descrição vão para páginas que acabam com três
+  ofertas classificadas Fair (risco já aceite no plano de 20 nov).
+```
+
+## Videos 1 and 2 trimmed, 24 Nov 2026
+
+To keep every video under 100 s: each-way scene 4 drops "Your bet slip shows the terms that count." from the narration (it stays on screen); fractional-odds scene 2 drops "So", scene 5 drops "and it's how the bookmaker makes money whoever wins". Nothing added; no new claim. Verdicts unchanged.

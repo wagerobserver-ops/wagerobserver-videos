@@ -7,6 +7,8 @@ import wagering from '../data/wagering-10x.json';
 import wageringT from '../data/wagering-10x.timings.json';
 import licence from '../data/check-ukgc-licence.json';
 import licenceT from '../data/check-ukgc-licence.timings.json';
+import acca from '../data/accumulator.json';
+import accaT from '../data/accumulator.timings.json';
 
 // Every video: its data, the timings written by tools/tts.py and its narration.
 export const VIDEOS: { video: VideoDef; timings: Timings }[] = [
@@ -14,4 +16,5 @@ export const VIDEOS: { video: VideoDef; timings: Timings }[] = [
   { video: fractional as VideoDef, timings: fractionalT },
   { video: wagering as VideoDef, timings: wageringT },
   { video: licence as VideoDef, timings: licenceT },
+  { video: acca as VideoDef, timings: accaT },
 ];
