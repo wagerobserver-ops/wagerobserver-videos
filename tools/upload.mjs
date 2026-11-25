@@ -100,4 +100,4 @@ if (existsSync(thumb)) {
   });
   console.log(t.ok ? 'thumbnail set' : `thumbnail not set (${t.status}): verify the channel at youtube.com/verify`);
 }
-console.log('Still to do in YouTube Studio: age restriction (18+) on this video.');
+console.log('Still to do in YouTube Studio: age restriction (18+) and comments off on this video.');
