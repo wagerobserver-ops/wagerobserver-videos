@@ -139,3 +139,7 @@ VERIFICAÇÕES FEITAS
   curtos devolve £9,10 de £10. Sem promessas, urgência ou palavras proibidas.
 - Números calculados com o código do site (ver o guião).
 ```
+
+## Newsletter line in four descriptions, 26 Nov 2026
+
+Issue #371 on the site repo: the descriptions of accumulator, rule-4, lucky-15 and double gain one line after the site links, "The Small Print, our newsletter every two weeks: https://wagerobserver.com/newsletter/". The page carries no offer and no `/go/` link (its sign-up box is hidden in Portugal like the offers), so the line adds no operator, offer or gambling claim. The 18+ line, the helpline, the affiliate disclosure and "Narration: synthetic voice" are unchanged. Verdicts unchanged: APROVADO.

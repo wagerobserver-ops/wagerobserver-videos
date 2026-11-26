@@ -37,6 +37,7 @@ From /uk/tools/rule-4-calculator/ and `RULE4_BANDS` in the site's `src/lib/odds.
 > When a horse is withdrawn after you've placed your bet, bookmakers take a Rule 4 deduction from your winnings. This video works through £10 at 5/1 with one and then two withdrawals, shows some of the deduction bands, and explains what Rule 4 never touches.
 >
 > Rule 4 calculator and full deductions table: https://wagerobserver.com/uk/tools/rule-4-calculator/
+> The Small Print, our newsletter every two weeks: https://wagerobserver.com/newsletter/
 >
 > 18+. Educational content, not betting advice. If gambling stops being fun: National Gambling Helpline 0808 8020 133 (free, 24/7) · GAMSTOP: https://www.gamstop.co.uk
 >

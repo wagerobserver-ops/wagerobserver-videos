@@ -38,6 +38,7 @@ Settled with the site's own code (`settle()` and `betType()` in `src/lib/odds.ts
 >
 > Lucky 15 guide: https://wagerobserver.com/uk/guides/lucky-15/
 > Lucky 15 calculator: https://wagerobserver.com/uk/tools/lucky-15-calculator/
+> The Small Print, our newsletter every two weeks: https://wagerobserver.com/newsletter/
 >
 > 18+. Educational content, not betting advice. If gambling stops being fun: National Gambling Helpline 0808 8020 133 (free, 24/7) · GAMSTOP: https://www.gamstop.co.uk
 >
