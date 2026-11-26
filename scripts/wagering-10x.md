@@ -39,6 +39,7 @@ From /uk/rules/wagering-cap-10x/ (and the calculator in `src/components/Calculat
 >
 > The 10x cap explained: https://wagerobserver.com/uk/rules/wagering-cap-10x/
 > Wagering calculator: https://wagerobserver.com/uk/guides/wagering-calculator/
+> The Small Print, our newsletter every two weeks: https://wagerobserver.com/newsletter/
 >
 > 18+. Educational content, not betting advice. Gambling costs money on average. If it stops being fun: National Gambling Helpline 0808 8020 133 (free, 24/7) · GAMSTOP: https://www.gamstop.co.uk
 >

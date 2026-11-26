@@ -30,6 +30,7 @@ Script approved on 20 Nov 2026 (Project doc `claude/video-plano.md`, "Guião 1")
 > An each-way bet is two bets: one to win, one to place. This video shows what each half pays with a worked example (£5 each way at 10/1), the standard UK place terms, and why a place at short odds can still lose money.
 >
 > Each-way guide and calculator: https://wagerobserver.com/uk/guides/each-way/
+> The Small Print, our newsletter every two weeks: https://wagerobserver.com/newsletter/
 >
 > 18+. Educational content, not betting advice. If gambling stops being fun: National Gambling Helpline 0808 8020 133 (free, 24/7) · GAMSTOP: https://www.gamstop.co.uk
 >

@@ -35,6 +35,7 @@ The example company and account number on screen are invented and labelled «Exa
 >
 > Full guide: https://wagerobserver.com/uk/guides/check-ukgc-licence/
 > Gambling Commission public register: https://www.gamblingcommission.gov.uk/public-register
+> The Small Print, our newsletter every two weeks: https://wagerobserver.com/newsletter/
 >
 > 18+. Educational content, not betting advice. If gambling stops being fun: National Gambling Helpline 0808 8020 133 (free, 24/7) · GAMSTOP: https://www.gamstop.co.uk
 >

@@ -143,3 +143,7 @@ VERIFICAÇÕES FEITAS
 ## Newsletter line in four descriptions, 26 Nov 2026
 
 Issue #371 on the site repo: the descriptions of accumulator, rule-4, lucky-15 and double gain one line after the site links, "The Small Print, our newsletter every two weeks: https://wagerobserver.com/newsletter/". The page carries no offer and no `/go/` link (its sign-up box is hidden in Portugal like the offers), so the line adds no operator, offer or gambling claim. The 18+ line, the helpline, the affiliate disclosure and "Narration: synthetic voice" are unchanged. Verdicts unchanged: APROVADO.
+
+## Newsletter line in the four public videos, 26 Nov 2026
+
+Tiago said «sim» on 26 Nov at 18h59 to the same line in the descriptions of each-way, fractional-odds, wagering-10x and check-ukgc-licence (#371), added in YouTube Studio and here so the scripts match what is live. Same reasoning as the entry above: /newsletter/ carries no offer and no `/go/` link. Verdicts unchanged: APROVADO.

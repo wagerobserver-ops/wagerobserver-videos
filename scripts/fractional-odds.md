@@ -37,6 +37,7 @@ All from /uk/guides/fractional-odds/ (same sums as `src/lib/odds.ts`):
 >
 > Fractional odds guide: https://wagerobserver.com/uk/guides/fractional-odds/
 > Odds converter: https://wagerobserver.com/uk/tools/odds-converter/
+> The Small Print, our newsletter every two weeks: https://wagerobserver.com/newsletter/
 >
 > 18+. Educational content, not betting advice. If gambling stops being fun: National Gambling Helpline 0808 8020 133 (free, 24/7) · GAMSTOP: https://www.gamstop.co.uk
 >
