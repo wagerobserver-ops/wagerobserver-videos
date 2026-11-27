@@ -15,6 +15,8 @@ import lucky15 from '../data/lucky-15.json';
 import lucky15T from '../data/lucky-15.timings.json';
 import double from '../data/double.json';
 import doubleT from '../data/double.timings.json';
+import betBuilder from '../data/bet-builder.json';
+import betBuilderT from '../data/bet-builder.timings.json';
 
 // Every video: its data, the timings written by tools/tts.py and its narration.
 export const VIDEOS: { video: VideoDef; timings: Timings }[] = [
@@ -26,4 +28,5 @@ export const VIDEOS: { video: VideoDef; timings: Timings }[] = [
   { video: rule4 as VideoDef, timings: rule4T },
   { video: lucky15 as VideoDef, timings: lucky15T },
   { video: double as VideoDef, timings: doubleT },
+  { video: betBuilder as VideoDef, timings: betBuilderT },
 ];

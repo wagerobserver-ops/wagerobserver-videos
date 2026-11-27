@@ -147,3 +147,24 @@ Issue #371 on the site repo: the descriptions of accumulator, rule-4, lucky-15 a
 ## Newsletter line in the four public videos, 26 Nov 2026
 
 Tiago said «sim» on 26 Nov at 18h59 to the same line in the descriptions of each-way, fractional-odds, wagering-10x and check-ukgc-licence (#371), added in YouTube Studio and here so the scripts match what is live. Same reasoning as the entry above: /newsletter/ carries no offer and no `/go/` link. Verdicts unchanged: APROVADO.
+
+## bet-builder, 27 Nov 2026
+
+```
+PARECER: APROVADO
+Conteúdo: bet-builder (script, data/bet-builder.json and YouTube description)   Mercado: UK (Great Britain)   Revisto a: 27 nov 2026
+
+BLOQUEANTES
+(nenhum)
+
+CORRIGIR (já corrigido no guião)
+1. A checklist da página fala de free bets e promoções: fica fora do vídeo (os vídeos nunca falam de ofertas ou bónus).
+2. Cena 4: os preços aparecem como «Illustrative prices, not from any bookmaker» no ecrã e são ditos como ilustrativos, como na página.
+
+VERIFICAÇÕES FEITAS
+- Sem operadores, ofertas, bónus ou links /go/.
+- 18+ no cartão inicial e no canto; helpline 0808 8020 133 e GAMSTOP no fim e na descrição; divulgação de afiliado, linha da newsletter e «Narration: synthetic voice» na descrição.
+- Mostra quando se perde: uma seleção perdida perde a aposta toda, o preço mais curto que o multiplicado (£37.50 e não £50), a probabilidade que cai a cada seleção, «only stake what you'd be fine losing».
+- Sem palavras proibidas, promessas, urgência, pessoas, jogadores, emblemas, camisolas, estádios ou cartoons; o cartão de título usa a arte da própria página.
+- Números iguais aos da página (ver o guião).
+```

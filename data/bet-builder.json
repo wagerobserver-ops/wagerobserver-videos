@@ -1,0 +1,90 @@
+{
+  "slug": "bet-builder",
+  "market": "uk",
+  "title": "Bet builders explained: why the price is usually shorter than the odds multiplied",
+  "scenes": [
+    {
+      "say": "A bet builder is one bet on several things happening in the same match. Every one has to win, and it's priced differently from an accumulator.",
+      "caption": "A bet builder is one bet on several things happening in the same match. Every one has to win, and it's priced differently from an accumulator.",
+      "visual": { "kind": "title", "kicker": "Bet builders explained", "title": "One match, one price, and every selection has to win", "art": "art/uk-bet-builder-1200.webp" }
+    },
+    {
+      "say": "Pick a match. Add selections from different markets: the result, goals, corners, cards, or a player to score. The site shows one price for the whole bet, and you place one stake. If any selection loses, the whole bet loses.",
+      "caption": "Pick a match. Add selections from different markets: the result, goals, corners, cards, or a player to score. The site shows one price for the whole bet, and you place one stake. If any selection loses, the whole bet loses.",
+      "visual": {
+        "kind": "lines",
+        "heading": "How a bet builder works",
+        "lines": [
+          { "text": "1  Pick a match", "at": 0 },
+          { "text": "2  Add selections: result, goals, corners, cards, a scorer", "at": 1 },
+          { "text": "3  One price for the whole bet", "at": 2 },
+          { "text": "4  One stake", "at": 2.5 },
+          { "text": "Any selection loses → the bet loses", "tone": "loss", "mark": true, "at": 3 }
+        ]
+      }
+    },
+    {
+      "say": "In an accumulator, the selections come from different events, so the odds simply multiply. In a bet builder, they affect each other. If a team's striker scores, that team is more likely to win.",
+      "caption": "In an accumulator, the selections come from different events, so the odds simply multiply. In a bet builder, they affect each other. If a team's striker scores, that team is more likely to win.",
+      "visual": {
+        "kind": "slips",
+        "heading": "Not the same as an accumulator",
+        "slips": [
+          { "label": "ACCUMULATOR", "lines": ["Different events", "Odds multiplied"], "tone": "plain", "at": 0 },
+          { "label": "BET BUILDER", "lines": ["One match", "Priced together"], "tone": "plain", "at": 1 }
+        ],
+        "footer": "Striker scores → team more likely to win",
+        "footerAt": 2
+      }
+    },
+    {
+      "say": "Say the team is two to win, and its striker is two and a half to score. Multiplied, that's five. But because the two tend to happen together, the bookmaker prices the pair lower, say at three seventy-five. On ten pounds, that's thirty-seven pounds fifty back if both win, not fifty. These prices are illustrative.",
+      "caption": "Say the team is 2.00 to win, and its striker is 2.50 to score. Multiplied, that's 5.00. But because the two tend to happen together, the bookmaker prices the pair lower, say at 3.75. On £10, that's £37.50 back if both win, not £50. These prices are illustrative.",
+      "visual": {
+        "kind": "table",
+        "heading": "Illustrative prices",
+        "head": ["Selection", "Price"],
+        "rows": [
+          { "cells": ["Team to win", "2.00"], "at": 0 },
+          { "cells": ["Its striker to score", "2.50"], "at": 0.5 },
+          { "cells": ["Odds multiplied", "5.00"], "at": 1 },
+          { "cells": ["Bet builder price", "3.75"], "mark": true, "at": 2 },
+          { "cells": ["£10 back if both win", "£37.50, not £50"], "tone": "loss", "at": 3 }
+        ],
+        "note": "Illustrative prices, not from any bookmaker. The gap differs from site to site."
+      }
+    },
+    {
+      "say": "Each extra selection lengthens the price, but it also cuts your chance of winning. A long bet builder pays well because all of its selections rarely win together.",
+      "caption": "Each extra selection lengthens the price, but it also cuts your chance of winning. A long bet builder pays well because all of its selections rarely win together.",
+      "visual": {
+        "kind": "lines",
+        "heading": "More selections",
+        "lines": [
+          { "text": "Each extra selection → a longer price", "at": 0 },
+          { "text": "and a lower chance that all of them win", "tone": "loss", "at": 0.5 },
+          { "text": "A long bet builder rarely wins", "mark": true, "at": 1 }
+        ]
+      }
+    },
+    {
+      "say": "Before you bet, read the rules: what happens if a player doesn't start, and whether you can cash out, and on what terms. Rules differ between bookmakers. And only stake what you'd be fine losing.",
+      "caption": "Before you bet, read the rules: what happens if a player doesn't start, and whether you can cash out, and on what terms. Rules differ between bookmakers. And only stake what you'd be fine losing.",
+      "visual": {
+        "kind": "checklist",
+        "heading": "Before you bet",
+        "items": [
+          { "text": "What if a player doesn't start?", "kind": "good", "at": 0.3 },
+          { "text": "Can you cash out, and on what terms?", "kind": "good", "at": 0.6 },
+          { "text": "Rules differ between bookmakers", "kind": "flag", "at": 1 },
+          { "text": "Only stake what you'd be fine losing", "kind": "good", "at": 2 }
+        ]
+      }
+    },
+    {
+      "say": "The full guide to bet builders is at Wager Observer. Gambling is for over-eighteens. If it stops being fun, the National Gambling Helpline is free on oh eight oh eight, eight oh two oh, one three three.",
+      "caption": "The full guide to bet builders is at WagerObserver. Gambling is for over-18s. If it stops being fun, the National Gambling Helpline is free on 0808 8020 133.",
+      "visual": { "kind": "end", "url": "wagerobserver.com", "tool": "Bet builders guide" }
+    }
+  ]
+}
