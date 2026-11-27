@@ -16,7 +16,7 @@
         "heading": "How a bet builder works",
         "lines": [
           { "text": "1  Pick a match", "at": 0 },
-          { "text": "2  Add selections: result, goals, corners, cards, a scorer", "at": 1 },
+          { "text": "2  Add selections from different markets", "at": 1 },
           { "text": "3  One price for the whole bet", "at": 2 },
           { "text": "4  One stake", "at": 2.5 },
           { "text": "Any selection loses → the bet loses", "tone": "loss", "mark": true, "at": 3 }
